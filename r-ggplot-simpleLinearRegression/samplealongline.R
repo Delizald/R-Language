@@ -17,3 +17,14 @@ ggplot()+
   geom_line(data=line,aes(x=x,y=y))+
   geom_point(data=means,aes(x=x,y=y),size=7,color="red")
 
+x<-c(rep(1,100),rep(9,100),rep(15,100),rep(22,100))
+y<-c(rnorm(100,4,10),rnorm(100,28,10),rnorm(100,46,10),rnorm(100,67,10))
+
+dat<-data.frame(x,y)
+
+ggplot()+
+  geom_line(data=line,aes(x=x,y=y))+
+  geom_point(data=means,aes(x=x,y=y),size=7,color="red")
+
+
+
