@@ -39,3 +39,8 @@ ggplot()+
   geom_line(data=line,aes(x=x,y=y))+
   geom_line(data=datos,aes(x=x,y=y,group=group))
 
+#Predictions
+lm(y~x,data=dat)
+
+y<-0.5141*70+33.8866
+
