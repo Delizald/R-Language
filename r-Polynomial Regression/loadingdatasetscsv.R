@@ -49,3 +49,14 @@ ggplot()+
   geom_point(data=means,aes(x=x,y=y),color="red",size=3)
 
 groups<-rbind(dat,means)
+
+#Best fitting polynomial degree of 3
+
+lm(y~x+I(x^2)+I(x^3),data=dat)
+
+function(x){
+  return(0.02024*x^3+2.49528*x-1.67268)
+}
+
+
+
